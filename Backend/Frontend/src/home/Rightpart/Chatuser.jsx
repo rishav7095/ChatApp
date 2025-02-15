@@ -3,7 +3,7 @@ import useConversation from "../../zustand/useConversation.js";
 import { useSocketContext } from "../../context/SocketContext.jsx";
 import { CiMenuFries } from "react-icons/ci";
 
-import profile from "../../../public/user.jpg"; // getting photo from public folder.
+import profile from "../../../public/user.jpg";
 
 function Chatuser() {
   const { selectedConversation } = useConversation();
@@ -12,7 +12,7 @@ function Chatuser() {
     return onlineUsers.includes(userId) ? "Online" : "Offline";
   };
 
-  // console.log(selectedConversation.fullname);
+  
   return (
     <div className="relative flex items-center h-[8%] justify-center gap-4 bg-slate-800 hover:bg-slate-700 duration-300 rounded-md">
       <label

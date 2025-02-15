@@ -19,7 +19,7 @@ function Login() {
       email: data.email,
       password: data.password,
     };
-    // console.log(userInfo);
+    
     axios
       .post("/api/user/login", userInfo)
       .then((response) => {
@@ -48,7 +48,7 @@ function Login() {
           <h2 className="text-xl text-white font-bold">Login</h2>
           <br />
 
-          {/* Email */}
+          
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ function Login() {
               This field is required
             </span>
           )}
-          {/* Password */}
+          
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ function Login() {
               This field is required
             </span>
           )}
-          {/* Text & Button */}
+         
           <div className="flex justify-between">
             <p>
               New user?

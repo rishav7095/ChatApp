@@ -13,7 +13,7 @@ function Signup() {
     formState: { errors },
   } = useForm();
 
-  // watch the password and confirm password fields
+ 
   const password = watch("password", "");
   const confirmPassword = watch("confirmPassword", "");
 
@@ -28,7 +28,7 @@ function Signup() {
       password: data.password,
       confirmPassword: data.confirmPassword,
     };
-    // console.log(userInfo);
+    
     await axios
       .post("/api/user/signup", userInfo)
       .then((response) => {
@@ -56,7 +56,7 @@ function Signup() {
           </h1>
           <h2 className="text-xl text-white font-bold">Signup</h2>
           <br />
-          {/* Fullname */}
+          
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function Signup() {
               This field is required
             </span>
           )}
-          {/* Email */}
+          
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ function Signup() {
             </span>
           )}
 
-          {/* Password */}
+         
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ function Signup() {
             </span>
           )}
 
-          {/*Confirm Password */}
+          
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +159,7 @@ function Signup() {
             </span>
           )}
 
-          {/* Text & Button */}
+         
           <div className="flex justify-between">
             <p>
               Have an account?

@@ -17,7 +17,7 @@ const userSchema = mongoose.Schema({
     confirmPassword: {
         type: String,
     },
-}, { timestamps: true }); // createdAt & updatedAt
+}, { timestamps: true }); 
 
 const User = mongoose.model("User", userSchema);
 export default User;
